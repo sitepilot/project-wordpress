@@ -1,8 +1,8 @@
 {
-    "name": "sitepilot/app-wp",
+    "name": "sitepilot/project-wordpress",
     "type": "project",
-    "license": "MIT",
-    "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure.",
+    "license": "GPL-3.0-or-later",
+    "description": "Boilerplate for WordPress projects on the Sitepilot platform.",
     "homepage": "https://sitepilot.io",
     "authors": [{
         "name": "Nick Jansen",
@@ -18,7 +18,7 @@
         "wp-config"
     ],
     "support": {
-        "issues": "https://github.com/sitepilot/app-wp/issues"
+        "issues": "https://github.com/sitepilot/project-wordpress/issues"
     },
     "repositories": [{
         "type": "composer",
