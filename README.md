@@ -75,4 +75,4 @@ You can modify `.sitepilot/deploy/00-install` or add scripts to the `.sitepilot/
 
 ## Credits
 
-This project is based on the the [Bedrock](https://github.com/roots/bedrock) WordPress boilerplate by [Roots](https://roots.io).
+This project was inspired by the [Bedrock](https://github.com/roots/bedrock) WordPress boilerplate.
