@@ -2,7 +2,7 @@
     "name": "sitepilot/project-wordpress",
     "type": "project",
     "license": "GPL-3.0-or-later",
-    "description": "Boilerplate for WordPress projects on the Sitepilot platform.",
+    "description": "WordPress project boilerplate for development and running your site on the Sitepilot managed hosting platform.",
     "homepage": "https://sitepilot.io",
     "authors": [{
         "name": "Nick Jansen",
