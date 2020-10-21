@@ -18,8 +18,6 @@
  * @package WordPress
  */
 
-echo 'test';
-
 define('WP_ENV', getenv('APP_ENV') ?? 'production');
 
 if (WP_ENV == 'production') {
