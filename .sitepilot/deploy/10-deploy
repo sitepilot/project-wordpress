@@ -1,2 +1,2 @@
 #!/bin/bash
-composer intall --no-dev
+composer install --no-dev
