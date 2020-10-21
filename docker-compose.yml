@@ -12,12 +12,11 @@ services:
       - "8080:8080"
     restart: always
     environment:
+      APP_ENV: development
+      DB_NAME: app
       DB_HOST: db
       DB_USER: app
       DB_PASSWORD: secret
-      DB_NAME: app
-      APP_ENV: production
-      DEPLOY_WEBHOOK_TOKEN: supersecret
 
   db:
     image: mysql:8
