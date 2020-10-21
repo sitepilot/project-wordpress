@@ -69,6 +69,9 @@ Your WordPress installation is managed by Composer and lives in the `public` fol
 
 This stack is optimized for automagically deploying your project to the Sitepilot managed hosting platform. You can request access to our fast and developer-friendly  platform through our [support department](mailto:support@sitepilot.io).
 
+### Deploy Configuration
+
+You can modify `.sitepilot/deploy/00-install` or add scripts to the `.sitepilot/deploy` folder to change or extend the commands which will run after pulling your code onto the server.
 
 ## Credits
 
