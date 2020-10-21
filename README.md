@@ -1,6 +1,6 @@
 # WordPress Project Boilerplate
 
-WordPress project boilerplate for developing locally or deploying your WordPress project to the Sitepilot managed hosting platform.
+Project boilerplate for developing WordPress projects locally or deploying them to the Sitepilot managed hosting platform.
 
 ## Quickstart
 
