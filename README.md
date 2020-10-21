@@ -16,7 +16,7 @@ docker-compose up -d
 
 Navigate to http://localhost:8080 to access your WordPress installation.
 
-## Congfiguration
+## WordPress Configuration
 
 Composer is used to manage dependencies like WordPress version and which plugins / themes are installed.
 
@@ -43,15 +43,17 @@ Updating your WordPress version (or any plugin) is just a matter of changing the
 
 [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/) can be used to automate updates of your Composer dependencies in your project, including WordPress itself.
 
-### Modify runtime configuration
+## Runtime Configuration
+
+### Environment
 
 You can change your project's runtime configuration by modifying the environment variables in `.sitepilot/environment`.
 
-### Modify PHP configuration
+### PHP configuration
 
 You can change your project's PHP-configuration by modifying `.sitepilot/config/php/php.ini`. You can find a list of available options [here](https://www.php.net/manual/en/ini.list.php).
 
-### Modify Nginx configuration
+### Nginx configuration
 
 You can extend your project's Nginx-configuration by adding files to the appropriate `.sitepilot/config/nginx/*.d` folder. 
 
@@ -59,10 +61,15 @@ You can extend your project's Nginx-configuration by adding files to the appropr
 * `vhost-post.d` - included after the default vhost configuration.
 * `php-allowed-list.d` - allow direct access to PHP-files.
 
-### Add files to the document root
+### Document root files
 
 Your WordPress installation is managed by Composer and lives in the `public` folder. Every modification / addition to the `public` folder will be overwritten after a Composer install or update. Add files which need to live in the document root to the `root` folder.
 
 ## Deploy 🚀 
 
 This stack is optimized for automagically deploying your project to the Sitepilot managed hosting platform. You can request access to our fast and developer-friendly  platform through our [support department](mailto:support@sitepilot.io).
+
+
+## Credits
+
+This project is based on the the [Bedrock](https://github.com/roots/bedrock) WordPress boilerplate by [Roots](https://roots.io).
