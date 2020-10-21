@@ -1,0 +1,21 @@
+# Content
+content/plugins/*
+!content/plugins/.gitkeep
+content/mu-plugins/*/
+content/upgrade
+content/uploads/*
+!content/uploads/.gitkeep
+content/themes/*
+!content/themes/.gitkeep
+
+# WordPress
+public
+
+# Logs
+*.log
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml

@@ -1,0 +1,2 @@
+# Page Cache
+STACK_PAGE_CACHE_ENABLED=true

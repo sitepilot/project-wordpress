@@ -1,0 +1,37 @@
+version: "3.3"
+
+services:
+  app:
+    image: sitepilot/php-runtime:latest
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./:/opt/sitepilot/app
+    ports:
+      - "8080:8080"
+    restart: always
+    environment:
+      DB_HOST: db
+      DB_USER: app
+      DB_PASSWORD: secret
+      DB_NAME: app
+      APP_ENV: production
+      DEPLOY_WEBHOOK_TOKEN: supersecret
+
+  db:
+    image: mysql:8
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_USER: app
+      MYSQL_PASSWORD: secret
+      MYSQL_DATABASE: app
+      MYSQL_ROOT_PASSWORD: supersecret
+
+  redis:
+    image: redis:6-alpine
+
+volumes:
+  db_data:
