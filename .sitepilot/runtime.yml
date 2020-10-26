@@ -1,5 +1,10 @@
 nginx:
-  root: "public"
+  root: "release/public"
 
 cache:
   enabled: true
+
+deploy:
+  hooks:
+    postCloneScript: |
+      composer install --no-dev
