@@ -2,7 +2,7 @@ nginx:
   root: "release/public"
 
 cache:
-  enabled: true
+  enabled: false
 
 deploy:
   hooks:
